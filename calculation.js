@@ -1,11 +1,15 @@
-const g = 9.8;
-let height, time, initialVelocity;
-let velocity = 5.0;
-
-
 function calcHeight(gravity, velocity, height, time){
     height = velocity*time - 0.5 * gravity * Math.pow(time, 2);
-    console.log(height);
 }
 
+function calcHeight(gravity, velocity, time){
+     var  height = parseFloat(velocity)*parseFloat(time) - 0.5 * parseFloat(gravity) * Math.pow(parseFloat(time), 2);
+     alert(height);
+     document.getElementById("height").innerHTML = height;
+}
+
+function calcFinalVelocity() {
+     let finalVelocity = Math.sqrt(Math.pow(velocity,2) - 2 * gravity * height);
+     return finalVelocity;
+}
 
