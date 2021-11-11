@@ -63,9 +63,8 @@ h2{
 }
 
 /* format of calculation-buttton on webpage */
-.calcBtn{
+.calcBtn {
     position: relative;
-    margin-left: 270px;
-    margin-right: auto;
-    margin-top: 10px;
+    text-align: center;
+    margin-top: 5px;
 }
