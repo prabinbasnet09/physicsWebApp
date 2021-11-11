@@ -1,0 +1,71 @@
+/* style of intro */
+h2{
+    text-align: center;
+    color: blue;
+}
+
+/* layout of input-box */
+#calcBox {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+/* format of table-header */
+#calcBox th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: grey;
+    color: white;
+}
+
+/* format of table-data */
+#calcBox th, #calcBox td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+/* sets the style of dropdown menu in units */
+.units{
+    position: relative;
+    color: red;
+    font-style: italic;
+    font-size: 125%;
+    
+
+}
+
+/*formats of list of units available */
+.unit_list {
+    color:black;
+    display: none;
+    position: absolute;
+    background-color:whitesmoke;
+    width: auto;
+    z-index: 1;
+}
+
+/* style of unit list when hovering mouse  */
+.units:hover .unit_list{
+    display: block;
+}
+
+.unit_list span:hover{
+    background-color:lightgrey;
+}
+
+.units:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+/* format of calculation-buttton on webpage */
+.calcBtn{
+    position: relative;
+    margin-left: 270px;
+    margin-right: auto;
+    margin-top: 10px;
+}

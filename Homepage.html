@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <! -- this my comment-->
+<head>
+    <link rel="stylesheet" href="Home.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velocity Simulaiton</title>
+    <style>
+        .units:hover .unit_list{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Introduction of the page -->
+    <h2> You can simulate the updward or downward velocity of object under the influence of gravitty and given initial velocity.<br>
+        This webpage also lets you find other component like height, time, and velocity at any given instance.
+    </h2> 
+
+    <!-- takes user input for calculation -->
+    <table id = "calcBox"> 
+        <tr>
+            <th>VARIABLES</th>
+            <th>VALUES </th>
+            <th>UNITS</th>
+        </tr>
+        <tr>
+            <td>g</td>
+            <!-- takes input for the value of g -->
+            <td><input type="text" id="number" ></td>
+            <td>
+                <div class = "units">
+                    <button class = "dropbtn">select</button>
+                    <div class = "unit_list"> 
+                       <span>cm/s<sup>2</sup></span><br>
+                       <span>m/s<sup>2</sup></span><br>
+                       <span>km/hr<sup>2</sup></span><br>
+                    </div>
+                </div>
+            </td>
+
+        </tr>
+        <tr>
+            <td>velocity</td>
+            <!-- takes input for the value of velocity -->
+            <td><input type="text" id="number" ></td>
+            <td>
+                <div class = "units">
+                    <button class = "dropbtn">select</button>
+                    <div class = "unit_list"> 
+                       <span>cm/s</span><br>
+                       <span>m/s</span><br>
+                       <span>km/hr</span><br>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>height</td>
+            <!-- takes input for the value of height -->
+            <td><input type="text" id="number" ></td>
+            <td>
+                <div class = "units">
+                    <button class = "dropbtn">select</button>
+                    <div class = "unit_list"> 
+                       <span>cm</span><br>
+                       <span>m</span><br>
+                       <span>km</span><br>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>time</td>
+            <!-- takes input for the value of time -->
+            <td><input type="text" id="number" ></td>
+            <td>
+                <div class = "units">
+                    <button class = "dropbtn">select</button>
+                    <div class = "unit_list"> 
+                       <span>s</span><br>
+                       <span>min</span><br>
+                       <span>hr</span><br>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    </table>
+    <button type="button" class ="calcBtn" onclick="result();">Calculate</button>
+</body>
+</html>
