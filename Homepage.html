@@ -17,7 +17,7 @@
 </head>
 <body>
     <!-- Introduction of the page -->
-    <h2> You can simulate the updward or downward velocity of object under the influence of gravitty and given initial velocity.<br>
+    <h2> You can simulate the upward or downward velocity of object under the influence of gravitty and given initial velocity.<br>
         This webpage also lets you find other component like height, time, and velocity at any given instance.
     </h2> 
 
@@ -31,7 +31,7 @@
         <tr>
             <td>g</td>
             <!-- takes input for the value of g -->
-            <td><input type="number" name="gravity" id="value" ></td>
+            <td><input type="number" class="value" id="gravity" ></td>
             <td>
                 <div class = "units">
                     <button class = "dropbtn">select</button>
@@ -47,7 +47,7 @@
         <tr>
             <td>velocity</td>
             <!-- takes input for the value of velocity -->
-            <td><input type="number" name="velocity" id="value" ></td>
+            <td><input type="number" class="value" id="velocity" ></td>
             <td>
                 <div class = "units">
                     <button class = "dropbtn">select</button>
@@ -62,7 +62,7 @@
         <tr>
             <td>height</td>
             <!-- takes input for the value of height -->
-            <td><input type="number" name="height" id="value" ></td>
+            <td><input type="number" class="value" id="height" ></td>
             <td>
                 <div class = "units">
                     <button class = "dropbtn">select</button>
@@ -77,7 +77,7 @@
         <tr>
             <td>time</td>
             <!-- takes input for the value of time -->
-            <td><input type="number" name="time" id="value" ></td>
+            <td><input type="number" class="value" id="time" ></td>
             <td>
                 <div class = "units">
                     <button class = "dropbtn">select</button>
@@ -93,7 +93,7 @@
     </table>
     <div>   </div>
     <div class="calcBtn">
-        <button onclick="calcHeight(document.getElementsByName('gravity').value, document.getElementsByName('velocity').value, document.getElementsByName('time').value)">Calculate</button>
+        <button onclick="calcHeight(document.getElementById('gravity').value, document.getElementById('velocity').value, document.getElementById('height').value, document.getElementById('time').value)">Calculate</button>
     </div>
 </body>
 </html>

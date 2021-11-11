@@ -1,5 +1,6 @@
-
-
+function calcHeight(gravity, velocity, height, time){
+    height = velocity*time - 0.5 * gravity * Math.pow(time, 2);
+}
 
 function calcHeight(gravity, velocity, time){
      var  height = parseFloat(velocity)*parseFloat(time) - 0.5 * parseFloat(gravity) * Math.pow(parseFloat(time), 2);
