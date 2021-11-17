@@ -56,8 +56,7 @@ function velocity_points (init_velocity, time)
           velocity[i] = init_velocity - accDTG * time[i];
      }
      return velocity;
+
 }
 
 console.log(time_points(init_velocity, time_range));
-console.log(velocity_points(init_velocity, time));
-console.log(velocity_points(init_velocity, time));
