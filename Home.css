@@ -35,19 +35,10 @@ h2{
     color: red;
     font-style: italic;
     font-size: 125%;
-    
-
 }
 
 /*formats of list of units available */
-.unit_list {
-    color:black;
-    display: none;
-    position: absolute;
-    background-color:whitesmoke;
-    width: auto;
-    z-index: 1;
-}
+
 
 /* style of unit list when hovering mouse  */
 .units:hover .unit_list{
@@ -62,7 +53,7 @@ h2{
     background-color: #3e8e41;
 }
 
-/* format of calculation-buttton on webpage */
+/* format of calculation-but ton on webpage */
 .calcBtn {
     position: relative;
     text-align: center;
