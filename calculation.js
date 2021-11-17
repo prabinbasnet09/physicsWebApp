@@ -1,17 +1,17 @@
-function calcHeight(gravity, velocity, height, time){
-    height = velocity*time - 0.5 * gravity * Math.pow(time, 2);
-}
+// function calcHeight(gravity, velocity, height, time){
+//     height = velocity*time - 0.5 * gravity * Math.pow(time, 2);
+// }
 
-function calcHeight(gravity, velocity, time){
-     var  height = parseFloat(velocity)*parseFloat(time) - 0.5 * parseFloat(gravity) * Math.pow(parseFloat(time), 2);
-     alert(height);
-     document.getElementById("height").innerHTML = height;
-}
+// function calcHeight(gravity, velocity, time){
+//      var  height = parseFloat(velocity)*parseFloat(time) - 0.5 * parseFloat(gravity) * Math.pow(parseFloat(time), 2);
+//      alert(height);
+//      document.getElementById("height").innerHTML = height;
+// }
 
-function calcFinalVelocity() {
-     let finalVelocity = Math.sqrt(Math.pow(velocity,2) - 2 * gravity * height);
-     return finalVelocity;
-}
+// function calcFinalVelocity() {
+//      let finalVelocity = Math.sqrt(Math.pow(velocity,2) - 2 * gravity * height);
+//      return finalVelocity;
+// }
 
 
 
@@ -24,16 +24,19 @@ let time_range = 2 * (init_velocity/accDTG);
 
 console.log('s');
 const time = [0];
+
 function time_points (time_range)
 {
     let max_time = time_range;
     let i = 0;
 
-    while(time_range >= -1)
+    while(max_time >= -1)
     {
          time[i] = max_time;
          max_time -= 0.5;
     }
+
+    printArray(time);
     return time;
 }
 
@@ -59,4 +62,14 @@ function velocity_points (init_velocity, time)
 
 }
 
-console.log(time_points(init_velocity, time_range));
+time_points(time_range);
+
+function printArray(time){
+     
+     console.log(time.length);
+
+     for(let i=0; i<time.length; i++){
+          console.log(time[i]);
+     }
+}
+
