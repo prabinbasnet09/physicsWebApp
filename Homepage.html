@@ -1,15 +1,24 @@
 
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
     <!-- this my comment-->
+=======
+    <!--this my comment-->
+>>>>>>> 572492be46cfc932b81ddf0aba51bde5afea0fcc
 <head>
     <link rel="stylesheet" href="Home.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Velocity Simulaiton</title>
+<<<<<<< HEAD
     <!-- <script src="calculation.js"></script> -->
     <script src="formula.js"></script>
+=======
+    <script src="calculation.js"></script>
+    <script src = "units.js"></script>
+>>>>>>> 572492be46cfc932b81ddf0aba51bde5afea0fcc
     <style>
         .units:hover .unit_list{
             display: block;
@@ -18,7 +27,7 @@
 </head>
 <body>
     <!-- Introduction of the page -->
-    <h2> You can simulate the upward or downward velocity of object under the influence of gravitty and given initial velocity.<br>
+    <h2> You can simulate the upward or downward velocity of object under the influence of gravity and given initial velocity.<br>
         This webpage also lets you find other component like height, time, and velocity at any given instance.
     </h2> 
 
@@ -35,12 +44,11 @@
             <td><input type="number" class="value" id="gravity" ></td>
             <td>
                 <div class = "units">
-                    <button class = "dropbtn">select</button>
-                    <div class = "unit_list"> 
-                       <span>cm/s<sup>2</sup></span><br>
-                       <span>m/s<sup>2</sup></span><br>
-                       <span>km/hr<sup>2</sup></span><br>
-                    </div>
+                    <select name = "unit_list" place-holder = "unit">
+                        <option value = "centimeter_sec">cm/s2</option>
+                        <option value = "meter_sec">m/s2</option>
+                        <option value = "kilometer_sec">km/s2</option>
+                    </select>
                 </div>
             </td>
         </tr>
@@ -50,12 +58,11 @@
             <td><input type="number" class="value" id="velocity" ></td>
             <td>
                 <div class = "units">
-                    <button class = "dropbtn">select</button>
-                    <div class = "unit_list"> 
-                       <span>cm/s</span><br>
-                       <span>m/s</span><br>
-                       <span>km/hr</span><br>
-                    </div>
+                    <select name = "unit_list" place-holder = "unit">
+                        <option value = "centimeter_sec">cm/s</option>
+                        <option value = "meter_sec">m/s</option>
+                        <option value = "kilometer_sec">km/s</option>
+                    </select>
                 </div>
             </td>
         </tr>
@@ -65,12 +72,11 @@
             <td><input type="number" class="value" id="height" ></td>
             <td>
                 <div class = "units">
-                    <button class = "dropbtn">select</button>
-                    <div class = "unit_list"> 
-                       <span>cm</span><br>
-                       <span>m</span><br>
-                       <span>km</span><br>
-                    </div>
+                  <select name = "unit_list" place-holder = "unit">
+                      <option value = "centimeter">cm</option> 
+                      <option value = "meter">m</option>
+                      <option value = "kilometer">km</option> 
+                  </select>
                 </div>
             </td>
         </tr>
@@ -80,18 +86,16 @@
             <td><input type="number" class="value" id="time" ></td>
             <td>
                 <div class = "units">
-                    <button class = "dropbtn">select</button>
-                    <div class = "unit_list"> 
-                       <span>s </span><br>
-                       <span>min</span><br>
-                       <span>hr</span><br>
-                    </div>
+                    <select name = "unit_list" place-holder = "unit">
+                        <option value = "seconds">s</option> 
+                        <option value = "minutes">min</option>
+                        <option value = "hours">hr</option> 
+                    </select>
                 </div>
             </td>
         </tr>
     </table>
     </table>
-    <div>   </div>
     <div class="calcBtn">
         <button onclick="calcHeight(document.getElementById('gravity').value, document.getElementById('velocity').value, document.getElementById('height').value, document.getElementById('time').value)">Calculate</button>
     </div>
